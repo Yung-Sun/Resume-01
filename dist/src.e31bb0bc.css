@@ -165,7 +165,8 @@ h2 {
 
 h4 {
   font-size: 14.4px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-bottom: 6px; }
 
 .bio img {
   width: 80px;
@@ -178,6 +179,8 @@ h4 {
   margin-left: 1em;
   line-height: 1.5em;
   list-style-type: disc; }
+  .skill ul > li a {
+    border-bottom: 1px solid #333333; }
 
 .projects .projectWrapper {
   display: flex;
@@ -186,8 +189,6 @@ h4 {
   margin-bottom: 25px; }
   .projects .projectWrapper .description {
     width: 100%; }
-    .projects .projectWrapper .description h4 {
-      margin-bottom: 6px; }
     .projects .projectWrapper .description p {
       line-height: 1.5em; }
     .projects .projectWrapper .description div {
@@ -210,6 +211,24 @@ h4 {
       color: #999999;
       font-size: 9.6px;
       line-height: 2em; }
+
+.openSourceProjects .projectWrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; }
+  .openSourceProjects .projectWrapper img {
+    border: 1px solid #e6e6e6;
+    float: right;
+    width: 180px;
+    margin-right: 18px; }
+  .openSourceProjects .projectWrapper p {
+    line-height: 1.5em; }
+  .openSourceProjects .projectWrapper .description div {
+    margin-top: 6px; }
+  .openSourceProjects .projectWrapper .description a {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #333333;
+    font-size: 12px; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
