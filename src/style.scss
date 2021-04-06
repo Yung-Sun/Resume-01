@@ -1,6 +1,107 @@
-.bio{
-    color: red;
-    h1{
-        color: green;
+$grey: #333333;
+$pageRowFontSize: 12px;
+
+// global style
+* {
+    box-sizing: border-box;
+    color: $grey;
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans",
+        "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN",
+        "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp",
+        sans-serif;
+}
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.container {
+    margin: 0 40px;
+    background: white;
+    width: 210mm;
+    padding: 30px 40px;
+}
+section {
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: $pageRowFontSize * 2;
+    line-height: 1.8em;
+}
+h2 {
+    font-size: $pageRowFontSize * 1.5;
+}
+h4 {
+    font-size: $pageRowFontSize * 1.2;
+    line-height: 1.2em;
+}
+
+// page style
+
+.bio {
+    img {
+        width: 80px;
+        float: right;
+    }
+    ul > li {
+        line-height: 1.4em;
+    }
+}
+.skill {
+    ul > li {
+        margin-left: 1em;
+        line-height: 1.5em;
+        list-style-type: disc;
+    }
+}
+.projects {
+    .projectWrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 25px;
+        .description {
+            // border: 1px solid red;
+            width: 100%;
+            h4 {
+                margin-bottom: 6px;
+            }
+            p {
+                line-height: 1.5em;
+            }
+            div {
+                margin-top: 6px;
+            }
+            a {
+                padding-bottom: 2px;
+                border-bottom: 1px solid $grey;
+                font-size: $pageRowFontSize;
+            }
+        }
+        .link {
+            padding: 0 20px;
+            // border: 1px solid greenyellow;
+            width: 230px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                margin: 4px 0;
+                width: 100px;
+            }
+            span {
+                color: lighten($grey, 40%);
+                font-size: $pageRowFontSize * 0.8;
+                line-height: 2em;
+            }
+        }
     }
 }
